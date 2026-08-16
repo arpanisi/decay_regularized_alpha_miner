@@ -1,0 +1,7 @@
+description: "LLM-driven alpha-factor mining with decay-resistant regularization, evaluated against WRDS CRSP equity data."
+topics:
+  - alpha-mining
+  - information-coefficient
+  - llm-agents
+  - regularization
+  - abstract-syntax-tree
