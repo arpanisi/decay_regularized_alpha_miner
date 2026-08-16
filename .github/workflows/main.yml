@@ -29,7 +29,7 @@ jobs:
 
       - name: Run linter
         run: |
-          ruff check . --ignore E402,E731,F401
+          ruff check .
 
       - name: Run full test suite
         run: |
