@@ -1,0 +1,32 @@
+data:
+  start_date: "2015-01-01"
+  end_date: "2023-12-31"
+  train_start: "2015-01-01"
+  train_end: "2020-12-31"
+  validation_start: "2021-01-01"
+  validation_end: "2023-12-31"
+  universe_size: 2750
+  label_horizon_days: 10
+  output_panel: "outputs/panel/full_panel.parquet"
+  sec_user_agent: "decay-regularized-alpha-miner contact@example.com"
+grammar:
+  max_ast_nodes: 50
+mining:
+  candidates_per_round: 8
+  max_refinement_attempts: 5
+  full_rounds: 50
+evaluation:
+  min_abs_ic: 0.005
+  min_abs_icir: 0.1
+  min_lag1_autocorr: 0.6
+  min_monthly_robustness: 0.7
+  min_coverage: 0.9
+  min_alignment_score: 0.5
+zoo:
+  redundancy_threshold: 0.8
+  path: "outputs/zoo/zoo.json"
+llm:
+  provider: "openrouter"
+  base_url: "https://openrouter.ai/api/v1/chat/completions"
+  generation_model: ""
+  alignment_model: ""

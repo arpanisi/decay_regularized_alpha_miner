@@ -1,0 +1,8 @@
+numpy
+pandas
+pyarrow
+PyYAML
+requests
+wrds
+pytest
+python-dotenv

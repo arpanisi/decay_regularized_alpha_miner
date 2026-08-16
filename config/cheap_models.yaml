@@ -1,0 +1,19 @@
+openrouter:
+  default_generation_model: "qwen/qwen3.5-flash-02-23"
+  default_alignment_model: "qwen/qwen3.5-flash-02-23"
+  cheap_models:
+    - id: "qwen/qwen3.5-flash-02-23"
+      role: ["generation", "alignment"]
+      pricing_per_million_tokens:
+        input_usd: 0.065
+        output_usd: 0.26
+    - id: "qwen/qwen3-32b"
+      role: ["generation", "alignment"]
+      pricing_per_million_tokens:
+        input_usd: 0.08
+        output_usd: 0.28
+    - id: "deepseek/deepseek-v3.2"
+      role: ["generation"]
+      pricing_per_million_tokens:
+        input_usd: 0.2288
+        output_usd: 0.3432
